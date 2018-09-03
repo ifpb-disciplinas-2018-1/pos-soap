@@ -1,14 +1,14 @@
 package br.edu.ifpb;
 
-import br.edu.ifpb.soap.Calc;
-import br.edu.ifpb.soap.CalculadoraSOAP;
+import br.edu.ifpb.soap.calc.Calc;
+import br.edu.ifpb.soap.calc.CalculadoraSOAP;
 
 /**
  * @author Ricardo Job
  * @mail ricardo.job@ifpb.edu.br
  * @since 27/08/2018, 10:54:15
  */
-public class Main {
+public class MainDeCalc {
     public static void main(String[] args) {
         //http://localhost:8080/Calc/CalculadoraSOAP?WSDL
 // wsimport -Xnocompile -keep -verbose http://localhost:8080/Calc/CalculadoraSOAP?WSDL

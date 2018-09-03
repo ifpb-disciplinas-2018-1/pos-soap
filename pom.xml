@@ -18,6 +18,7 @@
     <modules>
         <module>pos-soap-jse</module>
         <module>pos-soap</module>
+        <module>pos-soap-node</module>
     </modules> 
 
 </project>
