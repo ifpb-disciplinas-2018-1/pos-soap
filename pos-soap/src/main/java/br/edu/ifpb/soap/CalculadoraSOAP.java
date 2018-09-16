@@ -13,14 +13,18 @@ import javax.jws.WebService;
  * @since 27/08/2018, 10:25:26
  */
 @Stateless
-@WebService(serviceName = "Calc")
-public class CalculadoraSOAP {
+@WebService(
+//        serviceName = "Calc",
+//        endpointInterface = "CalculadoraService"
+)
+public class CalculadoraSOAP implements CalculadoraService  {
 
     @Inject
     private Calculadora calculadora;
 
 //    @WebMethod(operationName = "somarSimples")
     @WebResult(name = "resposta")
+    @Override
     public int somar(
             @WebParam(name = "c") int c,
             @WebParam(name = "d") int d) {
